@@ -5,6 +5,16 @@ body {
     background-color: black;
 }
 
+
+.home__container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+}
+
 header {
     background-color: black;
     color: #fff;
@@ -27,16 +37,13 @@ ul {
     padding: 0;
 }
 
-internalList {
-    padding: 0;
-}
 
 li {
     margin-bottom: 10px;
 }
 
 a {
-    color: brown;
+    color: cyan;
     text-decoration: none;
 }
 
@@ -58,6 +65,32 @@ header h1 {
     transform: translate(-50%, -50%);
 }
 
+
+p {
+    margin-bottom: 15px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+
+
+.cover-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(146deg, rgba(255, 255, 255, 1) 4%, rgba(0, 0, 0, 1) 14%);
+    border-radius: 8px;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+
+.cover-container:hover p {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+
+}
 
 
 header h1:nth-child(1) {
